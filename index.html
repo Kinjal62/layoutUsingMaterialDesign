@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- top heder section -->
+	<div class="top_header">
+		<div class="custom_container">
+			<div class="left_content">
+				<ul class="selector">
+					<li>Call 1800 22 7979</li>
+					<li><span>Select Currency:</span>
+						<div class="mdc-select mdc-select--outlined">
+							<i class="mdc-select__dropdown-icon"></i>
+							<select id="outlined-label" class="mdc-select__native-control">
+								<option value="" disabled="" selected=""></option>
+								<option value="10000">10000</option>
+								<option value="20000">20000</option>
+								<option value="30000">30000</option>
+							</select>
+							<div class="mdc-notched-outline mdc-notched-outline--upgraded">
+								<div class="mdc-notched-outline__leading">
+								</div>
+								<div class="mdc-notched-outline__notch" style="">
+									<span id="outlined-label" class="mdc-floating-label" style="">INR</span>
+								</div>
+								<div class="mdc-notched-outline__trailing">
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- top-right header content -->
+			<div class="right_content">
+				<button class="mdc-button signin">
+					<span class="mdc-button__label">Sign IN</span>
+				</button>
+				<button class="mdc-button register">
+					<span class="mdc-button__label">Register</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- middle header content -->
+	<div class="middle_header">
+		<div class="custom_container">
+			<div class="logo">
+				<img src="image/logo.png" alt="logo">
+			</div>
+			<div class="right_content">
+				<ul class="list_content">
+					<li>International Tours</li>
+					<li>India Tours</li>
+					<li>speciality Tours</li>
+					<li>Place to visit</li>
+					<li>Blogs</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- bottom header content -->
+	<div class="bottom_header">
+		<div class="custom_container">
+			<div class="search">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+	<script type="text/javascript">
+		mdc.select.MDCSelect.attachTo(document.querySelector('.mdc-select'));
+	</script>
+</body>
+</html>

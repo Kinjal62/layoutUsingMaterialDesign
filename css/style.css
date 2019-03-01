@@ -1,0 +1,95 @@
+/*Common CSS for all*/
+body{
+	margin: 0px;
+	padding: 0px;
+}
+body *{
+	box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0px;
+}
+a{ 
+	text-decoration: none;
+	display: inline-block;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+li{
+	display: inline-block;
+}
+.custom_container{
+	width: 1140px;
+	max-width: 100%;
+	padding: 0px 15px;
+	margin: 0px auto;
+}
+
+/*Top header section*/
+.top_header{
+	background-image: linear-gradient(#444e96,#1b3682);
+	display: inline-block;
+	width: 100%;
+}
+.list_text{
+	color: white;
+}
+.left_content{
+	float: left;
+}
+.right_content{
+	float: right;
+	padding:10px;
+}
+.signin{
+	background-image: linear-gradient(#f8d86d, #e6a02b);
+}
+.register{
+	background-image: linear-gradient(#ea7a4c, #cf1e2d);
+}
+.mdc-button:not(:disabled) {
+	color: white;
+	text-transform: uppercase;
+}
+.selector{
+	border-bottom: 15px;
+}
+.selector li{
+	border-right: 1px solid white;
+	color: white;
+	padding: 10px 20px;
+}
+.selector li:last-child{
+	border-right: none;
+}
+/*middel header section*/
+.middle_header{
+	display: inline-block;
+	width: 100%;
+}
+.logo{
+	float: left;
+}
+.logo img{
+	height: 60px;
+	width: 80px;
+	margin: 15px;
+}
+.list_content{
+	float: right;
+}
+.list_content li{
+	padding: 30px 20px;
+}
+/*bottom header section*/
+.bottom_header{
+	background-image: linear-gradient(#5a9bd1,#3b81be);
+	display: inline-block;
+	width: 100%;
+}
+.search{
+	text-align: center;
+}
