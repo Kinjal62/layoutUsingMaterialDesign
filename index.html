@@ -8,6 +8,11 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
 	<!-- top heder section -->
@@ -17,13 +22,13 @@
 				<ul class="selector">
 					<li>Call 1800 22 7979</li>
 					<li><span>Select Currency:</span>
-						<div class="mdc-select mdc-select--outlined">
+						<div class="mdc-select mdc-select--outlined drpdown">
 							<i class="mdc-select__dropdown-icon"></i>
 							<select id="outlined-label" class="mdc-select__native-control">
 								<option value="" disabled="" selected=""></option>
-								<option value="10000">10000</option>
-								<option value="20000">20000</option>
-								<option value="30000">30000</option>
+								<option value="Doller">Doller</option>
+								<option value="Pound">Pound</option>
+								<option value="Yuro">Yuro</option>
 							</select>
 							<div class="mdc-notched-outline mdc-notched-outline--upgraded">
 								<div class="mdc-notched-outline__leading">
@@ -67,19 +72,60 @@
 			</div>
 		</div>
 	</div>
-	<!-- bottom header content -->
+
 	<div class="bottom_header">
 		<div class="custom_container">
-			<div class="search">
-				<input type="text" placeholder="Search.." name="search">
-				<button type="submit"><i class="fa fa-search"></i></button>
+			<div class="mdc-text-field mdc-text-field--no-label searchbar">
+				<i class="material-icons mdc-list-item__graphic" aria-hidden="true">search</i>
+				<input type="text" id="my-text-field" class="mdc-text-field__input" placeholder="Where Would you like to go?" aria-label="Label">
+				<button class="mdc-button letsgo">
+					<span class="mdc-button__label">Let's Go</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- slider section -->
+	<section>
+		<div class="slider">
+			<div>
+				<img src="image/slider1.jpg" width="100%" height="auto">
+			</div>
+			<div>
+				<img src="image/slider2.jpg" width="100%" height="auto">
+			</div>
+			<div>
+				<img src="image/slider3.jpg" width="100%" height="auto">
+			</div>
+			<div>
+				<img src="image/slider4.jpg" width="100%" height="auto">
+			</div>
+			<div>
+				<img src="image/slider5.jpg" width="100%" height="auto">
+			</div>
+		</div>
+	</section>
+	<div class="description">
+		<div class="custom_container">
+			<div class="mdc-layout-grid">
+				<div class="mdc-layout-grid__inner">
+					<div class="mdc-layout-grid__cell--span-6 contantImg">
+						<h1 class="offer_header">SUMMER OFFERS</h1>
+						<span class="offer_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+					</div>
+				</div>
+				<div class="mdc-layout-grid__cell--span-6"></div>
 			</div>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-	<script type="text/javascript">
+	<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript">
 		mdc.select.MDCSelect.attachTo(document.querySelector('.mdc-select'));
-	</script>
+		mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+		</script>
 </body>
 </html>
